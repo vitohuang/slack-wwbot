@@ -1,0 +1,40 @@
+{
+  "name": "WWBot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "knex migrate:latest --env production && node app.js",
+    "dev": "DEBUG=* nodemon app.js",
+    "test": "jest --watch"
+  },
+  "engines": {
+    "node": "10.16.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/bolt": "^2.1.1",
+    "@slack/web-api": "^5.11.0",
+    "agenda": "^3.1.0",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "capture-website": "^1.2.1",
+    "cron-validator": "^1.1.1",
+    "date-fns": "^2.15.0",
+    "date-fns-tz": "^1.0.10",
+    "debug": "^4.1.1",
+    "dotenv": "^8.0.0",
+    "knex": "^0.19.1",
+    "lodash": "^4.17.15",
+    "pg": "^8.3.0",
+    "sqlite3": "^4.0.9"
+  },
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1"
+  }
+}
